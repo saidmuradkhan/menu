@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #306068;
+    min-height: 100%;
+    display: flex;
+    
+}
+
+#menu {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    padding: 0px;
+    
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu > ul > li {
+    background: rgba(255, 255, 255, 0.15);
+    margin: 6px 0;
+    border-radius: 8px;
+    position: relative;
+}
+
+#menu > ul > li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.submenu ul {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 5px;
+    left: 100px;
+    top: 0;
+    min-width: 150px;
+}
+#menu ul ul li.submenu:nth-child(1) ul {
+     top: 0; left: 110px; 
+}
+#menu ul ul li.submenu:nth-child(2) ul {
+     top: 45px; left: 110px;
+} 
+#menu ul ul li.submenu:nth-child(3) ul {
+     top: 113px; left: 110px;
+}
+.submenu ul li {
+    background: transparent;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.submenu ul li:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.submenu ul li a {
+    color: #fff;
+    padding: 8px 15px;
+}
+
+.submenu:hover > ul {
+    display: block;
+}
+
+/* İç-içə submenu-lar (məs: About altındakı) */
+#menu ul ul li.submenu ul {
+    left: 150px;
+    top: 0;
+}
+
+#menu li:hover > a {
+    color: #00e0ff;
+    text-shadow: 0 0 5px #00e0ff;
+}
