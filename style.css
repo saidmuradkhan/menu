@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: "Segoe UI", Arial, sans-serif;
 }
-
 body {
     min-height: 100vh;
     background: linear-gradient(120deg, #295169, #45a0b3);
@@ -13,7 +12,6 @@ body {
     align-items: flex-start;
     padding-top: 40px;
 }
-
 #menu {
     width: 80vw;
     max-width: 900px;
@@ -25,15 +23,12 @@ body {
     border: 1.7px solid rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(6px);
     position: relative;
-    
 }
-
 #menu ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
-
 #menu > ul > li {
     position: relative;
     margin: 0 45px;
@@ -41,11 +36,9 @@ body {
     background: rgba(255, 255, 255, 0.15);
     transition: 0.3s;
 }
-
 #menu > ul > li:hover {
     background: rgba(255, 255, 255, 0.3);
 }
-
 #menu a {
     text-decoration: none;
     color: white;
@@ -55,12 +48,10 @@ body {
     font-weight: 500;
     transition: 0.3s;
 }
-
 #menu li:hover > a {
     color: #00e0ff;
     text-shadow: 0 0 5px #00e0ff;
 }
-
 #menu ul ul {
     display: none;
     position: absolute;
@@ -73,13 +64,11 @@ body {
     padding: 5px 0;
     z-index: 99;
 }
-
 #menu ul ul li {
     margin: 0;
     width: 100%;
     transition: 0.3s;
 }
-
 #menu ul ul li:hover {
     background: rgba(210, 171, 171, 0.15);
 }
@@ -95,16 +84,12 @@ body {
 #menu ul ul li a {
     padding: 8px 15px;
 }
-
-
 #menu li:hover > ul {
     display: flex;
 }
-
 #menu ul ul li.submenu {
     position: relative;
 }
-
 #menu ul ul li.submenu ul {
     top: 0;
     left: 100%;
